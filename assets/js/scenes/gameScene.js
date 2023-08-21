@@ -284,7 +284,6 @@ const createGameScene = () => {
         destroy(playerBullet);
         addKaboom(playerBullet.pos);
         terminatorLives -= 1;
-
         // Check if terminator lives are 0 and add to score if so
         if (terminatorLives <= 0) {
           score += 500;
@@ -299,6 +298,8 @@ const createGameScene = () => {
             );
             terminatorLives = 3;
           }, "5000");
+        } else {
+          play("arnie-scream",{ loop: false, volume: 0.8 });
         }
       });
 
