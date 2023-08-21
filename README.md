@@ -53,7 +53,7 @@ The goal of this project is to produce a retro emulator game following the crite
 * As a user, I want to be able to pause and resume or quit the game if i so wish.
     * To pause the game was too difficult to implement in the given time. 
 
-<br>![Project Board](assets/images/readme_images/projectboard.png)
+![Project Board](assets/images/readme_images/projectboard.png)
 
 ## Design
 
@@ -122,7 +122,7 @@ The criteria suggested an old school emulator game with retro neon style appeara
              
       * Wilhelm scream - sourced from https://bigsoundbank.com/
 
-        ![Wilhelm Scream](assets/images/readme_images/wilhelmscream.PNG)
+        ![Wilhelm Scream](assets/images/readme_images/wilhelmscream.png)
 
       * Gameover sound effect - sourced from https://opengameart.org/
       
@@ -146,7 +146,7 @@ On starting the game the player will use W, S, A and D to move the character aro
 
 www.figma.com - Figma is a cloud-based design and prototyping tool that is widely used for creating user interfaces (UI) and user experience (UX) designs. 
 
-![Figma Mock-up](assets/images/readme_images/figmamockup.PNG)
+![Figma Mock-up](assets/images/readme_images/figmamockup.png)
 
 ## Tech
 
@@ -155,7 +155,7 @@ www.figma.com - Figma is a cloud-based design and prototyping tool that is widel
 * JavaScript
 * Kaboom.js
 
-![Languages](assets/images/readme_images/Languages.PNG)
+![Languages](assets/images/readme_images/languages.png)
 
 ## Programs Used
 
