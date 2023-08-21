@@ -277,20 +277,28 @@ const createGameScene = () => {
         addKaboom(playerBullet.pos);
       });
 
+      let terminatorLives = 3;
+
       // Destroy terminator, add to score and respawn after 5 seconds
       onCollide("terminator", "playerBullet", (terminator, playerBullet) => {
-        destroy(terminator);
         destroy(playerBullet);
-        score += 200;
-        scoreCount.text = `Score:${score}`;
         addKaboom(playerBullet.pos);
-        setTimeout(() => {
-          spawnTerminatorEnemy(
-            spawnPoints[randomIndexTerminator].x,
-            spawnPoints[randomIndexTerminator].y,
-            player
-          );
-        }, "5000")
+        terminatorLives -= 1;
+
+        // Check if terminator lives are 0 and add to score if so
+        if (terminatorLives <= 0) {
+          score += 500;
+          scoreCount.text = `Score:${score}`;
+          destroy(terminator);
+          setTimeout(() => {
+            spawnTerminatorEnemy(
+              spawnPoints[randomIndexTerminator].x,
+              spawnPoints[randomIndexTerminator].y,
+              player
+            );
+            terminatorLives = 3;
+          }, "5000");
+        }
       });
 
       // display score
