@@ -277,10 +277,20 @@ const createGameScene = () => {
         addKaboom(playerBullet.pos);
       });
 
-      // Destroy bullet hitting terminator
+      // Destroy terminator, add to score and respawn after 5 seconds
       onCollide("terminator", "playerBullet", (terminator, playerBullet) => {
+        destroy(terminator);
         destroy(playerBullet);
-        // addKaboom(playerBullet.pos);
+        score += 200;
+        scoreCount.text = `Score:${score}`;
+        addKaboom(playerBullet.pos);
+        setTimeout(() => {
+          spawnTerminatorEnemy(
+            spawnPoints[randomIndexTerminator].x,
+            spawnPoints[randomIndexTerminator].y,
+            player
+          );
+        }, "5000")
       });
 
       // display score
