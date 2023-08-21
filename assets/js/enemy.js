@@ -23,7 +23,7 @@ const spawnTerminatorEnemy = (spawnX, spawnY, player) => {
 
   const enemy = add([
     sprite("terminator"), // placeholder until we have a sprite
-    area(),
+    area(scale(0.6)),
     scale(1.7),
     pos(spawnX, spawnY),
     origin("center"),
