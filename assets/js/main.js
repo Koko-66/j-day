@@ -61,6 +61,7 @@ loadSound("menu_select", "menu_select.wav");
 loadSound("shoot", "gun_sound_effect.wav");
 loadSound("death", "death.wav");
 loadSound("game_over_music", "game_over.wav");
+loadSound("ill-be-back", "ill-be-back.mp3");
 
 //load scene sprites
 loadRoot(`${relUrl}/scene_background_images/`);

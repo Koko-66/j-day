@@ -290,6 +290,7 @@ const createGameScene = () => {
           score += 500;
           scoreCount.text = `Score:${score}`;
           destroy(terminator);
+          play("ill-be-back",{ loop: false, volume: 1 });
           setTimeout(() => {
             spawnTerminatorEnemy(
               spawnPoints[randomIndexTerminator].x,
