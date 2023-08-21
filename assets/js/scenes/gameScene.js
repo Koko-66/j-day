@@ -324,6 +324,7 @@ const createGameScene = () => {
       // Quit Game
       onKeyPress("escape", () => {
         mainMusic.stop();
+        play("hasta-la-vista",{ loop: false, volume: 0.8 });
         go("welcome");
       });
 

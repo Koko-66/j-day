@@ -60,6 +60,7 @@ const createGameOverScene = () => {
     addButton("Quit", vec2(550, 500), () => {
       play("menu_select", { loop: false, volume: 1.0 });
       gameOverMusic.pause();
+      play("hasta-la-vista",{ loop: false, volume: 0.8 });
       go("welcome");
     });
 
